@@ -1,0 +1,87 @@
+@import './adapter.less';
+@import './base.less';
+@import 'font.less';
+@import './mixin.less';
+
+.wrapper{
+	.items{
+		padding: 0 24/32rem;//除以32是因为
+		.title{
+			font-size: 28/32rem;
+			margin: 24/32rem 0 30/32rem;
+			overflow: hidden;
+			h3{
+				float: left;
+			}
+			span{
+				color: #888;
+				float: right;
+			}
+		}
+		//添加按钮
+		.add{
+			height: 220/32rem;
+			border: 3/32rem dashed #dedede;
+			background-color: #fff;
+			a{
+				margin-top: 36/32rem;
+				font-size: 104/32rem;
+				color: #aeaeae;
+				text-align: center;
+			}
+			span{
+				font-size: 16/32rem;
+				margin-top: 14/32rem;
+				display: block;
+			}
+		}
+		//公共
+		.item{
+			margin-bottom: 32/32rem;
+			overflow: hidden;
+			&:not(.add){
+				.border-radius(10/32rem);
+			}
+			.body{
+				height:224/32rem;
+			}
+			.action{
+				height: 80/32rem;
+				background-color: #fff;
+				display: flex;
+				padding: 18/32rem 0;
+				box-sizing: border-box;
+				a{
+					flex: 1;
+					line-height: 44/32rem;
+					text-align: center;
+					color: #a974bc;
+					font-size: 26/32rem;
+					border-right: 1px solid #e8e2d9;
+					&:last-child{
+						border-right: none;
+					}
+				}
+				span{
+					color:#888;
+				}
+			}
+		}
+		// .item:not(.add){
+		// 	.border-radius(10/32rem);
+
+		// }
+		.all{
+			.body{
+				background-color: #55bc75;
+			}
+		}
+
+		//优惠券
+		.coupon{
+			.body{
+				background-color: #a974bc;
+			}
+		}
+	}
+}
